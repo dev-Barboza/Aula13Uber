@@ -24,9 +24,27 @@ namespace aula13Uber
             }else
             {
                 System.Console.WriteLine("Não é possivel utilizar o Aplicativo");
+
+
             }
+
+             System.Console.WriteLine(" digite o numero para determinada ação: 1 - Adicionar cartão 2 - Excluir cartão 3 - Solicitar motorista");
+                string escolher = Console.ReadLine();
+
+               switch (escolher){
+
+
+                    case "1":
+                    x.SolicitarMotorista();
+                    break;
+
+               }
+
+            
 
 
         }
+
+        
     }
 }

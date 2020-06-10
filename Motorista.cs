@@ -12,13 +12,9 @@ class Motorista : Usuario
         return "procurando passageiro";
     }
 
-    public bool  ReceberPagamento(string StatusCorrida)
-    {
-        if(StatusCorrida == "finalizada")
-        {
-            return true;
-        }
 
     
-    }
+    
+
+    
 }
