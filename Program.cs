@@ -21,14 +21,8 @@ namespace aula13Uber
             {
                 System.Console.WriteLine("Login autorizado !!");
                 System.Console.WriteLine(x.TokenLogin);
-            }else
-            {
-                System.Console.WriteLine("Não é possivel utilizar o Aplicativo");
 
-
-            }
-
-             System.Console.WriteLine(" digite o numero para determinada ação: 1 - Adicionar cartão 2 - Excluir cartão 3 - Solicitar motorista");
+                System.Console.WriteLine(" digite o numero para determinada ação: 1 - solicitar motorista 2- Cadastro de cartão");
                 string escolher = Console.ReadLine();
 
                switch (escolher){
@@ -38,7 +32,21 @@ namespace aula13Uber
                     x.SolicitarMotorista();
                     break;
 
+                    case "2":
+                    x.CadastrodeCartao();
+                    break;
+
                }
+            }else
+            {
+                System.Console.WriteLine("Não é possivel utilizar o Aplicativo");
+
+
+            }
+
+           
+
+           
 
             
 

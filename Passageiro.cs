@@ -2,9 +2,15 @@ using System;
 
 class Passageiro : Usuario
 {
-    public string SolicitarMotorista()
+    public void SolicitarMotorista()
     {
-        return "procurando motorista ....";
+        
+        System.Console.WriteLine("digite o destino");
+        LocalDestino =  Console.ReadLine();
+
+        System.Console.WriteLine("viagem aceita!");
+
+
     }
 
     public bool Pagar(string statusCorrida)
@@ -21,6 +27,9 @@ class Passageiro : Usuario
         public string titular { get; set; }
         public string cvv { get; set; }
         public string  bandeira { get; set; }
+
+       public string LocalDestino { get; set; }
+       
         
 
         public void CadastrodeCartao()
