@@ -42,19 +42,21 @@ class Passageiro : Usuario
             Console.WriteLine(" digite numero do cartão ");
             numero = Console.ReadLine();
 
+            Console.WriteLine(" digite  a bandeira do cartão");
+             bandeira = Console.ReadLine();
+            
+            
             Console.WriteLine(" digite  o cvv do cartão");
                 cvv = Console.ReadLine();
 
-            Console.WriteLine(" digite  a bandeira do cartão");
-             bandeira = Console.ReadLine();
+            
         }
 
         public void ExcluirConta(){
 
         }
 
-        //Corrida
-        private string LocalInicio;
+        
         
 
 
